@@ -3,6 +3,7 @@ School assignment
 Проект по информатика на Филип Сербезов, 11 "в" клас, НПМГ "Акад. Любомир Чакалов". 
 Created on Visual Studio Code
 Java Development Kit (JDK) version "23" 2024-09-17
+External library/libraries: Jackson library for reading and writing JSON files, javax.swing
 Program details:
 Simulator for a cinema management system. 
 Program contains storage files for objects representing movies, accounts, rooms and screenings.
