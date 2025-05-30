@@ -1,0 +1,155 @@
+[ {
+  "room_id" : 3,
+  "start" : {
+    "year" : 2025,
+    "month" : "JULY",
+    "day_in_month" : 3,
+    "hour" : 3,
+    "minute" : 10,
+    "second" : null
+  },
+  "seat_info" : [ [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ], [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ], [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false,
+    "occupied" : "true",
+    "occupant_name" : "theta"
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ], [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false,
+    "occupied" : "true",
+    "occupant_name" : "theta"
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ] ],
+  "ident" : 2,
+  "movie_name" : "Garfield"
+}, {
+  "room_id" : 3,
+  "start" : {
+    "year" : 2025,
+    "month" : "FEBRUARY",
+    "day_in_month" : 13,
+    "hour" : 2,
+    "minute" : 35,
+    "second" : null
+  },
+  "seat_info" : [ [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ], [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ], [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false,
+    "occupied" : "true",
+    "occupant_name" : "theta"
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ], [ {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false,
+    "occupied" : "true",
+    "occupant_name" : "theta"
+  }, {
+    "_occupant_name" : null,
+    "_occupied" : false
+  } ] ],
+  "ident" : 2,
+  "movie_name" : "Spider man"
+} ]

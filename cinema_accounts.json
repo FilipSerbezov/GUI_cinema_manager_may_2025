@@ -1,0 +1,10 @@
+[ {
+  "username" : "theta",
+  "password" : [ "b", "u", "r", "g", "e", "r" ],
+  "admin" : true
+}, {
+  "username" : "gamma",
+  "password" : [ "c", "h", "i", "c", "k", "e", "n", "n", "u", "g", "g", "e", "t" ],
+  "admin" : true
+}
+]
