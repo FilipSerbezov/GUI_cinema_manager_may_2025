@@ -1,4 +1,7 @@
 package main_1;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Seat {
     private boolean occupied;
     private String occupant_name;
@@ -19,10 +22,12 @@ public class Seat {
         this.occupant_name = input_occupant_name;
     } 
 
+    @JsonProperty("occupied")
     public boolean is_occupied() {
         return this.occupied;
     }
 
+    @JsonProperty("occupant_name")
     public String get_occupant_name() {
         return this.occupant_name;
     }
