@@ -561,12 +561,12 @@ class home_state extends gui_cinema_manager_state {
                 throw new IllegalStateException("Expected JSON array at root");
             }
 
+            Cinema_room output_room = new Cinema_room();
             while (room_reader.nextToken() == JsonToken.START_OBJECT) {
+                boolean correct_one = false;
                 int store_identification;
                 int store_dim_1_row_length = -1;
                 int store_dim_2_column_length = -1;
-                boolean found = false;
-                Cinema_room output_room = new Cinema_room();
                 field_loop:
                 while (room_reader.nextToken() != JsonToken.END_OBJECT) {
                     if (room_reader.currentToken() == JsonToken.FIELD_NAME) {
@@ -575,31 +575,32 @@ class home_state extends gui_cinema_manager_state {
                         
                         if (field_name.equals("identification")) {
                             store_identification = room_reader.getValueAsInt();
-                            if (store_identification != input_identification) {
-                                break field_loop;
+                            if (store_identification == input_identification) {
+                                correct_one = true;
+                            } else {
+                                correct_one = false;
                             }
-                            found = true;
 
                             output_room.set_identification(input_identification);
-                        } else if (field_name.equals("length_of_dim_1_rows")) {
+                        } else if (correct_one && field_name.equals("length_of_dim_1_rows")) {
                             
                             store_dim_1_row_length = room_reader.getValueAsInt();
                             output_room.set_length_of_dim_1_rows(store_dim_1_row_length);
 
-                        } else if (field_name.equals("length_of_dim_2_columns")) {
+                        } else if (correct_one && field_name.equals("length_of_dim_2_columns")) {
                             store_dim_2_column_length = room_reader.getValueAsInt();
                             output_room.set_length_of_dim_2_columns(store_dim_2_column_length);
                         }
                         
                     }    
                 }
-                if (found) {
+
+                if (correct_one) {
                     return output_room;
-                } else {
-                    return null;
                 }
             }
             return null;
+            
         } catch (IOException adsks) {
             adsks.printStackTrace();
         }
