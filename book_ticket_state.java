@@ -42,8 +42,8 @@ public class book_ticket_state extends gui_cinema_manager_state {
     public void display_inner_panel(JPanel input_panel) {
         JScrollPane room_scroll_pane = new JScrollPane();
         room_scroll_pane.getViewport().add(input_panel);
-        room_scroll_pane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        room_scroll_pane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+        room_scroll_pane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        room_scroll_pane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         process_frame.add(room_scroll_pane);
         process_frame.getContentPane().setLayout(new BorderLayout());
         process_frame.getContentPane().add(room_scroll_pane, BorderLayout.CENTER);
@@ -156,21 +156,7 @@ public class book_ticket_state extends gui_cinema_manager_state {
         });
         seat_panel.add(cancel_button);
 
-        JButton refresh_button = new JButton("refresh");
-        refresh_button.setBounds(330,  dim_1_offset + (dim_1_size + 10)*dim_1_length, 100, 30);
-        refresh_button.addActionListener(
-            new ActionListener() {
-                @Override 
-                public void actionPerformed(ActionEvent e) {
-                    remove_button_arr_from_panel(seat_button_arr_wrapper.get_button_arr(), seat_panel);
-                    seat_button_arr_wrapper.set_button_arr(get_seat_buttons_arr(selected_seats, seat_arr_to_visualize));
-                    add_seat_buttons(seat_button_arr_wrapper.get_button_arr(), seat_panel);
-                    seat_panel.revalidate();
-                    seat_panel.repaint();
-                }
-            }
-        );
-        seat_panel.add(refresh_button);
+        seat_panel.setPreferredSize(new Dimension(220 + (dim_2_size + 10)*dim_2_length, 200 + dim_1_offset + (dim_1_size + 10)*dim_1_length));
 
         display_inner_panel(seat_panel);
     }
